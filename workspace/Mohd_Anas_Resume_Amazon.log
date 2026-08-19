@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.15)  19 AUG 2026 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.15)  20 AUG 2026 05:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Mohd_Anas_Resume.tex
-(./Mohd_Anas_Resume.tex
+**Mohd_Anas_Resume_Amazon.tex
+(./Mohd_Anas_Resume_Amazon.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./resume.cls
@@ -257,27 +257,28 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box53
 \enit@count@id=\count302
 \enitdp@description=\count303
-) (./Mohd_Anas_Resume.aux)
-\openout1 = `Mohd_Anas_Resume.aux'.
+)
+(./Mohd_Anas_Resume_Amazon.aux)
+\openout1 = `Mohd_Anas_Resume_Amazon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -338,56 +339,68 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 \makeMPintoPDFobject=\count309
 \everyMPtoPDFconversion=\toks24
 )) (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 19.
 
-(./Mohd_Anas_Resume.out) (./Mohd_Anas_Resume.out)
+(./Mohd_Anas_Resume_Amazon.out) (./Mohd_Anas_Resume_Amazon.out)
 \@outlinefile=\write3
-\openout3 = `Mohd_Anas_Resume.out'.
+\openout3 = `Mohd_Anas_Resume_Amazon.out'.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 38.
+(Font)              scaled to size 23.63593pt on input line 28.
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 23.63593pt on input line 38.
+(Font)              scaled to size 23.63593pt on input line 28.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 38.
+(Font)              scaled to size 9.49997pt on input line 28.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 38.
+nput line 28.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 38.
+nput line 28.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 38.
+ input line 28.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 38.
+n input line 28.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 41.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
-5.
+(Font)              scaled to size 10.40245pt on input line 32.
 
+Overfull \hbox (33.18225pt too wide) in paragraph at lines 40--41
+\T1/phv/b/n/10.95 Course-work: \T1/phv/m/n/10.95 Data Struc-tures, Al-go-rithms
+, Al-go-rithm Anal-y-sis, Op-er-at-ing Sys-tems, Object-Oriented de-sign, Back-
+end Sys-tems 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
+8.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 65.
+(Font)              scaled to size 10.40245pt on input line 58.
 
-Overfull \hbox (5.14023pt too wide) in paragraph at lines 65--66
-[]\T1/phv/b/n/10.95 Architected back-end ser-vices \T1/phv/m/n/10.95 us-ing CQR
-S, Post-greSQL, and Su-pabase RPCs, se-cur-ing \T1/phv/b/n/10.95 15 RPC func-ti
-ons and database
+Overfull \hbox (0.87245pt too wide) in paragraph at lines 81--82
+[]\T1/phv/b/n/10.95 Contributed to Next.js (Ver-cel) \T1/phv/m/n/10.95 by mi-gr
+at-ing the patch-next util-ity from Com-monJS to Type-Script ESM, elim-i-nat-in
+g re-peated
  []
 
 
-Overfull \hbox (6.60742pt too wide) in paragraph at lines 162--163
-[]\T1/phv/m/n/10.95 Implemented \T1/phv/b/n/10.95 asyn-chronous pro-cess-ing wi
-th Re-dis/RQ\T1/phv/m/n/10.95 , PostgreSQL-backed de-ci-sion state, \T1/phv/b/n
-/10.95 Open-Router model fall-back\T1/phv/m/n/10.95 ,
+Overfull \hbox (4.18343pt too wide) in paragraph at lines 83--84
+[]\T1/phv/m/n/10.95 Contributed 22 merged Pull Re-quests and opened 12 Is-sues 
+across open-source projects, in-cor-po-rat-ing main-tainer feed-back
+ []
+
+
+Overfull \hbox (19.42667pt too wide) in paragraph at lines 104--105
+[]\T1/phv/m/n/10.95 Developed a \T1/phv/b/n/10.95 lead-er-less Dis-tributed key
+-value store \T1/phv/m/n/10.95 im-ple-ment-ing repli-ca-tion, fail-ure de-tec-t
+ion, syn-chro-niza-tion, gossip-based
  []
 
 [1
@@ -396,30 +409,31 @@ th Re-dis/RQ\T1/phv/m/n/10.95 , PostgreSQL-backed de-ci-sion state, \T1/phv/b/n
 /enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5f
 ree2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr
 /share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}]
-(./Mohd_Anas_Resume.aux)
+(./Mohd_Anas_Resume_Amazon.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-Package rerunfilecheck Info: File `Mohd_Anas_Resume.out' has not changed.
+Package rerunfilecheck Info: File `Mohd_Anas_Resume_Amazon.out' has not changed
+.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  13217 strings out of 469515
- 226210 string characters out of 5470807
- 639108 words of memory out of 5000000
+ 226343 string characters out of 5470807
+ 637143 words of memory out of 5000000
  41732 multiletter control sequences out of 15000+600000
  645839 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,5n,93p,510b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,5n,93p,517b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Reg
 ular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fre
 e-Solid.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Mohd_Anas_Resume.pdf (1 page, 47448 bytes).
+Output written on Mohd_Anas_Resume_Amazon.pdf (1 page, 47130 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

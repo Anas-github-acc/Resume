@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mohd Anas - Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage{enumitem}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlist[itemize]{
+    leftmargin=1em,
+    labelsep=0.5em,
+    itemindent=-0em,
+    itemsep=-4pt
+}
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Mohd Anas},
+    email={anas.ahamad955@gmail.com},
+    phone={8081233871},
+    linkedin={linkedin.com/in/anas-um},
+    github={github.com/Anas-github-acc}
+]
+
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+
+    \educationItem[
+        university={IIIT Vadodara, Gujarat, India},
+        graduation={Expected Graduation: Aug 2027},
+        grade={7.46 / 10.0 GPA},
+        program={B.Tech, Information Technology},
+        coursework={Data Structures, Algorithms, Algorithm Analysis, Operating Systems, Object-Oriented design, Backend Systems}
+    ]
+
+\end{educationSection}
+
+
+% --------- Professional Experience -----------
+\begin{experienceSection}{Professional Experience}
+
+    \experienceItem[
+        company={\textbf{Aarogya Kaya | SDE Intern | Remote}},
+        location={},
+        position={},
+        duration={July 2025 - Jan 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Architected Go backend using CQRS, PostgreSQL, and Supabase RPCs for efficient and centralized data access.
+
+        \item Designed a multi-tiered backend architecture using in-memory cache, Redis, and database, reducing average read latency from \textbf{420ms to 38ms (91\%)} and maintaining \textbf{p95 latency below 250ms}.
+
+        \item Translated evolving product requirements into backend designs across 15+ modules, contributing through the \textbf{full SDLC}.
+
+        \item Applied \textbf{SOLID principles and design patterns}, reducing code duplication by \textbf{30\%}.
+
+        \item Engineered fault-tolerant asynchronous synchronization pipelines with retries and idempotent processing, supporting 500+ daily events while maintaining 99.9\% data consistency.
+
+    \end{itemize}
+
+
+    \experienceItem[
+        company={\textbf{Open Source Contributor | Remote}},
+        location={},
+        position={},
+        duration={July 2025 - May 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item \textbf{Contributed to Next.js (Vercel)} by migrating the patch-next utility from CommonJS to TypeScript ESM, eliminating repeated dependency reinstalls and reducing contributor setup overhead.
+
+        \item Contributed 22 merged Pull Requests and opened 12 Issues across open-source projects, incorporating maintainer feedback to fix bugs, implement features, and improve developer tooling.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Projects -----------
+\begin{experienceSection}{Projects}
+
+    \projectItem[
+        title={\textbf{a3.store | Distributed Key-value Store | Python, EKS, AWS, Kubernetes, Prometheus, Security}},
+        live={https://a3store.vercel.app},
+        github={https://github.com/Anas-github-acc/a3.store.git},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Developed a \textbf{leaderless Distributed key-value store} implementing replication, failure detection, synchronization, gossip-based membership, and anti-entropy repair across a 3-node cluster.
+
+        \item Deployed on AWS EKS using Kubernetes StatefulSets and persistent volumes, enabling \textbf{rolling upgrades, pod recovery and self-healing behavior}.
+
+        \item Built \textbf{Pytest-based tests} covering replication, failure detection, synchronization, and node-failure scenarios, with GitHub Actions enforcing automated checks and preventing regressions.
+
+    \end{itemize}
+
+
+    \projectItem[
+        title={\textbf{Dumpmail | Open-Source Email Automation Platform | Next.js, TypeScript, Supabase, GitHub Actions}},
+        live={https://Dumpmail.vercel.app},
+        github={https://github.com/Anas-github-acc/Dumpmail.git},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Built an open-source email automation platform with time-based campaign scheduling, workflow execution, and dynamic template processing for automated email delivery.
+
+        \item Designed a CI-driven automation engine using GitHub Actions/GitLab CI with Supabase-backed lead management and automated Playwright testing.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Technical Skills -----------
+\begin{skillsSection}{Technical Skills}
+
+    \skillItem[
+        category={Languages:},
+        skills={C/C++, Go, Python, Java, Javascript, SQL}
+    ]
+    \\
+    \skillItem[
+        category={Frontend:},
+        skills={React.js, React Flow, Next.js, TypeScript}
+    ]
+    \\
+    \skillItem[
+        category={Backend \& System:},
+        skills={FastAPI, Node.js, gRPC, REST APIs, Kafka, Redis}
+    ]
+    \\
+    \skillItem[
+        category={Cloud \& Infrastructure:},
+        skills={AWS, EKS, Kubernetes, Docker, Terraform, Linux, IAM, EC2, VPC, Git, GitHub}
+    ]
+    \\
+    \skillItem[
+        category={Testing:},
+        skills={Pytest, Vitest, Jest, Playwright, Cypress, Selenium}
+    ]
+
+\end{skillsSection}
+
+
+% --------- Achievement -----------
+\begin{achievementSection}{Achievement}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Ranked \textbf{365th} among \textbf{15,804} participants in CodeChef \textbf{START192D}.
+
+        \item Ranked \textbf{3,026th} among \textbf{17,000+} participants in Codeforces Round 1110 (Div. 1 + Div. 2)
+
+        \item \textbf{Solved 500+ DSA problems} across Codeforces, LeetCode and CodeChef.
+
+    \end{itemize}
+
+\end{achievementSection}
+
+
+% --------- Leadership & Activities -----------
+\begin{experienceSection}{Leadership \& Activities}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Organized an intra-college hackathon and mentored \textbf{25+ teams} as a \textbf{Technical Committee Core Member}.
+
+        \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+\end{document}

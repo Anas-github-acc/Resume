@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mohd Anas - Salesforce AMTS Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage{enumitem}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlist[itemize]{
+    leftmargin=1em,
+    labelsep=0.5em,
+    itemindent=-0em,
+    itemsep=-4pt
+}
+
+\begin{document}
+
+% ======================================================
+% CONTACT INFORMATION
+% ======================================================
+
+\introduction[
+    fullname={Mohd Anas},
+    email={anas.ahamad955@gmail.com},
+    phone={(+91) 8081233871},
+    linkedin={linkedin.com/in/anas-um},
+    github={github.com/Anas-github-acc}
+]
+
+
+% ======================================================
+% EDUCATION
+% ======================================================
+
+\begin{educationSection}{Education}
+
+    \educationItem[
+        university={IIIT Vadodara, Gujarat, India},
+        graduation={August 2023 - May 2027},
+        grade={7.46 / 10.0 GPA},
+        program={B.Tech in Information Technology},
+        coursework={Data Structures \& Algorithms, Object-Oriented Design, Operating Systems, Database Management Systems}
+    ]
+
+\end{educationSection}
+
+
+% ======================================================
+% EXPERIENCE
+% ======================================================
+
+\begin{experienceSection}{Experience}
+
+    % --------------------------------------------------
+    % AAROGYA KAYA
+    % --------------------------------------------------
+
+    \experienceItem[
+        company={\textbf{Aarogya Kaya} | Remote | Software Engineer Intern},
+        location={},
+        position={},
+        duration={July 2025 - January 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item \textbf{Architected production backend services} using CQRS, PostgreSQL, and Supabase RPCs, securing \textbf{15 RPC functions and database tables} with \textbf{JWT/RBAC, Row-Level Security, admin-only controls, and environment secrets}.
+
+        \item Improved \textbf{production read performance for a service serving 1,000+ users daily}, reducing average latency from \textbf{420ms to 38ms} and maintaining \textbf{p95 below 250ms} through in-memory caching, Redis, and database access optimization.
+
+        \item Engineered \textbf{fault-tolerant asynchronous workflows} with retries and idempotent processing, improving reliability of production operations under transient failures.
+
+        \item Built \textbf{CI/CD quality gates} for backend and web services, automatically running \textbf{unit and Playwright E2E test suites}, linting, build validation, and deployment across pull requests and merges.
+
+    \end{itemize}
+
+
+    % --------------------------------------------------
+    % OPEN SOURCE
+    % --------------------------------------------------
+
+    \experienceItem[
+        company={\textbf{Open Source} | Remote | Software Contributor},
+        location={},
+        position={},
+        duration={July 2025 - May 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Migrated the \textbf{Next.js (Vercel) patch-next utility} from CommonJS to TypeScript ESM, saving \textbf{15--30 seconds} per local reinstall during development and testing.
+
+        \item Contributed \textbf{22 merged pull requests and 12 issues} through \textbf{maintainer reviews, design discussions, and iterative feedback}, fixing bugs, implementing features, and improving developer tooling.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% ======================================================
+% PROJECTS
+% ======================================================
+
+\begin{experienceSection}{Projects}
+
+    % --------------------------------------------------
+    % A3.STORE
+    % --------------------------------------------------
+
+    \projectItem[
+        title={\textbf{A3.store} -- Distributed Key-Value Database | Python, AWS EKS, Kubernetes, Terraform, gRPC},
+        live={https://a3store.vercel.app},
+        github={https://github.com/Anas-github-acc/a3.store.git},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Built a \textbf{leaderless distributed key-value store} with \textbf{gRPC replication, quorum consistency, gossip-based failure detection, hinted handoff, and anti-entropy repair} across a \textbf{3-node, RF=2 cluster}.
+
+        \item Designed \textbf{pluggable storage and peer-communication abstractions}
+          using \textbf{Python ABCs, dependency injection, and SOLID principles},
+          enabling interchangeable implementations and isolated testing of
+          distributed-system behavior.
+        
+        \item Deployed \textbf{3 stateful replicas on AWS EKS} with Kubernetes and Terraform, implementing \textbf{persistent storage, autoscaling, NetworkPolicies, PodDisruptionBudgets, readiness/liveness probes, and rolling updates} for resilient cluster operation.
+
+        % \item Instrumented distributed operations with \textbf{Prometheus and Grafana} using \textbf{10 custom metrics} covering gRPC latency/errors, replication failures, gossip membership, node health, and anti-entropy repairs.
+
+
+
+
+        % ==================================================
+        % USE THIS AFTER ADDING PYTEST + COVERAGE + CI TESTING
+        % ==================================================
+        %
+        \item Designed a \textbf{Pytest unit and integration automation suite}
+        covering \textbf{storage, quorum replication, gossip failure detection,
+        hinted handoff, and anti-entropy recovery}, enforcing automated tests
+        and \textbf{code-coverage gates in GitHub Actions}.
+
+    \end{itemize}
+
+
+    % --------------------------------------------------
+    % SECOND BRAIN
+    % --------------------------------------------------
+
+    \projectItem[
+        title={\textbf{Second Brain} -- Agentic Career Path Simulator | Python, FastAPI, Redis Queue, LLMs},
+        live={https://second-brain-a3.vercel.app/?preview&t=152&f=212},
+        github={https://github.com/Anas-github-acc/Second-Brain},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Architected a \textbf{multi-stage AI reasoning backend} that transforms natural-language decisions into \textbf{persisted scenario graphs, tradeoffs, branching outcomes, and action plans} through pass-based LLM orchestration.
+
+        \item Built asynchronous execution with \textbf{FastAPI and Redis/RQ background workers}, hardening LLM workflows with \textbf{multi-model fallback, structured-output parsing, malformed JSON recovery, and asynchronous HTTP client reuse}.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% ======================================================
+% TECHNICAL SKILLS
+% ======================================================
+
+\begin{skillsSection}{Technical Skills}
+
+    \skillItem[
+        category={Languages:},
+        skills={Go, Python, C/C++, Java, JavaScript, SQL}
+    ]
+    \\
+    \skillItem[
+        category={Backend \& Systems:},
+        skills={REST APIs, gRPC, PostgreSQL, Redis, Distributed Systems, System Design}
+    ]
+    \\
+    \skillItem[
+        category={Cloud \& DevOps:},
+        skills={AWS, EKS, Kubernetes, Docker, Terraform, GitHub Actions, CI/CD}
+    ]
+    \\
+    \skillItem[
+        category={Testing \& Observability:},
+        skills={Pytest, Playwright, Unit Testing, Integration Testing, E2E Testing, Prometheus, Grafana}
+    ]
+    \\
+    \skillItem[
+        category={AI \& LLM:},
+        skills={LLM Orchestration, RAG, Agentic Workflows, Prompt Engineering, OpenRouter}
+    ]
+
+\end{skillsSection}
+
+
+% ======================================================
+% ACHIEVEMENTS
+% ======================================================
+
+\begin{achievementSection}{Achievements}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Ranked \textbf{365th} among \textbf{15,804} participants in CodeChef \textbf{START192D}.
+
+        \item Ranked \textbf{3,026th} among \textbf{17,000+} participants in Codeforces Round 1110 (Div. 1 + Div. 2).
+
+    \end{itemize}
+
+\end{achievementSection}
+
+
+% ======================================================
+% LEADERSHIP
+% ======================================================
+
+\begin{experienceSection}{Leadership \& Activities}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Organized an intra-college hackathon and mentored \textbf{25+ teams} as a \textbf{Technical Committee Core Member}.
+
+        \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+\end{document}

@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mohd Anas - Microsoft Azure Data / Azure SQL Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage{enumitem}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlist[itemize]{
+    leftmargin=1em,
+    labelsep=0.5em,
+    itemindent=-0em,
+    itemsep=-4pt
+}
+
+% \usepackage{xcolor}
+%
+% \fancyhead{%
+%     \small
+%     \textcolor{headergray}{\textbf{
+%         Backend $\bullet$ Distributed Systems $\bullet$ Cloud $\bullet$ AI Engineering
+%     }}
+% }
+
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Mohd Anas},
+    email={anas.ahamad955@gmail.com},
+    phone={(+91) 8081233871},
+    linkedin={linkedin.com/in/anas-um},
+    github={github.com/Anas-github-acc}
+]
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={IIIT Vadodara, Gujarat, India},
+        graduation={August 2023 - May 2027},
+        program={B.Tech in Information Technology},
+        coursework={Data Structures \& Algorithms, Operating Systems, Object-Oriented Design, Backend Systems}
+    ]
+\end{educationSection}
+
+
+% --------- Experience -----------
+\begin{experienceSection}{Experience}
+
+    \experienceItem[
+        company={\textbf{Aarogya Kaya} | Remote | Software Engineer Intern},
+        location={Remote},
+        position={SDE Intern},
+        duration={July 2025 - January 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item \textbf{Architected backend services} using CQRS, PostgreSQL, and Supabase RPCs, securing \textbf{15 RPC functions and database tables} with \textbf{JWT/RBAC, Row-Level Security, admin-only controls, environment secrets, and least-privilege access}.
+        \item Optimized \textbf{backend read paths} with in-memory caching, Redis, and database access patterns, reducing average latency from \textbf{420ms to 38ms} while maintaining \textbf{p95 latency below 250ms}.
+        % \item Engineered \textbf{fault-tolerant asynchronous pipelines} with retries and idempotent processing for a production service serving \textbf{1,000+ users daily}.
+        % \item Built \textbf{CI/CD pipelines} for backend and web services, automating \textbf{unit tests, Playwright E2E tests, linting, build validation, and deployment} across pull requests and merges.
+        \item Engineered \textbf{retryable, idempotent asynchronous pipelines} for a production service serving \textbf{1,000+ daily users}, and automated unit test, Playwright E2E, lint, build, and deployment checks through \textbf{CI/CD pipelines}.
+    \end{itemize}
+
+
+    \experienceItem[
+      company={\textbf{Next.js} | Remote | Contributor},
+        location={},
+        position={},
+        duration={July 2025 - May 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Migrated the \textbf{Next.js (Vercel) patch-next utility} from CommonJS to TypeScript ESM, saving \textbf{15--30 seconds} per local reinstall during development and testing.
+        % \item Contributed \textbf{22 merged pull requests and 12 issues} through maintainer reviews, design discussions, and iterative feedback, fixing bugs, implementing features, and improving developer tooling.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Projects -----------
+\begin{experienceSection}{Projects}
+
+    \projectItem[
+        title={\textbf{A3.store} -- Distributed Key-Value Database | Python, AWS EKS, Kubernetes, Terraform, gRPC},
+        live={https://a3store.vercel.app},
+        github={https://github.com/Anas-github-acc/a3.store.git},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+ 
+        % \item Implemented a \textbf{leaderless key-value engine} where nodes coordinate reads/writes across replicas over \textbf{gRPC}, using configurable read/write quorums and replication factor \textbf{RF=2} to keep data available during node failures.
+        \item Built a \textbf{leaderless distributed key-value store} with gRPC replication, quorum reads/writes, gossip failure detection, and anti-entropy recovery across a \textbf{3-node RF=2 cluster}.
+        \item Deployed \textbf{3 stateful replicas on AWS EKS} using Kubernetes and Terraform, adding persistent storage, health checks, disruption handling, and replica-aware pod placement.
+        % \item Designed node-failure recovery using \textbf{gossip membership and failure detection}, with background \textbf{anti-entropy synchronization} that compares partitioned key ranges and repairs missing or stale replicas after nodes rejoin.
+        % \item Instrumented \textbf{10 Prometheus metrics} with Grafana dashboards for request, replication, storage, and cluster health, while enforcing \textbf{Kubernetes NetworkPolicies} around gRPC and gossip traffic.
+    \end{itemize}
+
+    % \projectItem[
+    %   title={\textbf{Shop-Intelligence} -- Real-Time Customer Behavior Analytics | Python, Redis Queue, Pytest },
+    %     live={Video, https://www.youtube.com/watch?v=6cUaSd2ndzg},
+    %     github={https://github.com/Anas-github-acc/shop-intelligence},
+    %     keyHighlight={Real-time customer behavior analytics from multi-camera CCTV streams.}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Built a distributed \textbf{computer vision pipeline} for \textbf{4 synchronized CCTV streams} using concurrent workers and redis message queues, processing \textbf{15 FPS} with \textbf{50 ms frame-processing latency}.
+    %     \item Designed an \textbf{event-driven retail analytics engine} with a global visitor registry, generating real-time customer behavior events and dashboards while using multiprocessing and multithreading for scalable multi-camera processing.
+    %
+    %     % \item Built a distributed real-time \textbf{computer vision pipeline} for four synchronized CCTV streams using concurrent workers and message queues, \textbf{processing 15 FPS} while reducing frame-processing latency to \textbf{50 ms}.
+    %     % % \item Built a \textbf{distributed real-time video-processing pipeline} for four synchronized CCTV streams using \textbf{concurrent workers} and \textbf{message queues}, processing \textbf{15 FPS} while reducing frame-processing latency to \textbf{50 ms}.
+    %     % \item Designed an \textbf{event-driven} analytics engine and global visitor registry that generated real-time backend events for customer behavior dashboards and retail insights.
+    %     % \item \textbf{Optimized multi-camera processing} using \textbf{multiprocessing} and \textbf{multithreading} to maximize throughput and ensure scalable real-time analytics.
+    %
+    %     % \item Designed a multi-camera retail analytics pipeline processing 4+ synchronized CCTV streams at 15 FPS, enabling real-time visitor tracking and behavior analysis across 10+ store zones.
+    %     % \itme Built a global visitor registry using 512-dimensional appearance embeddings and cosine-similarity matching, achieving 90\% cross-camera re-identification accuracy and reducing duplicate visitor counts by 12\%.
+    %     % \item Architected finite-state-machine based event processing that generated ENTRY, EXIT, QUEUE, and ZONE events with 83\% precision while supporting real-time analytics for customer flow and dwell-time measurement.
+    %
+    % \end{itemize}
+ 
+     \projectItem[
+       title={\textbf{Dumpmail} -- Email Automation Platform | Node.js, Next.js, Supabase, GitHub Actions, SMTP/IMAP},
+        live={https://Dumpmail.vercel.app},
+        github={https://github.com/Anas-github-acc/Dumpmail.git},
+        keyHighlight={}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Built a \textbf{Next.js, Node.js, and TypeScript} email automation platform, using \textbf{Node.js scripts for email delivery}, scheduled campaigns, workflow execution, dynamic template processing, and Supabase-backed lead management.
+          % Built a \textbf{Next.js and TypeScript} email automation platform with scheduled campaigns, workflow execution, dynamic template processing, and \textbf{Supabase-backed} lead management.
+        \item Engineered a \textbf{CI-driven testing and delivery workflow} using GitHub Actions/GitLab CI, automating application checks and validating end-to-end campaign workflows.
+          % Engineered a \textbf{CI-driven delivery and testing workflow} using GitHub Actions/GitLab CI and \textbf{Playwright}, automating application checks and validating end-to-end campaign workflows.
+        % \item Built an open-source email automation platform with time-based campaign scheduling, workflow execution, and dynamic template processing for automated email delivery.
+        % \item Designed a CI-driven automation engine using GitHub Actions/GitLab CI with Supabase-backed lead management and automated Playwright testing.
+    \end{itemize}
+
+    \projectItem[
+      title={\textbf{Second Brain} -- Agentic Career Path Simulator | Python, LLMs, Redis Queue, React Flow},
+      live={https://second-brain-a3.vercel.app/?preview&t=152&f=212},
+      github={https://github.com/Anas-github-acc/Second-Brain},
+      keyHighlight={}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+      \itemsep -6pt {}
+      \item Architected a \textbf{multi-stage AI reasoning backend} that transforms natural-language decisions into \textbf{scenario graphs, tradeoffs, option scores, and branching outcomes} through pass-based LLM orchestration.
+      \item Implemented \textbf{asynchronous processing with Redis/RQ}, PostgreSQL-backed decision state, \textbf{OpenRouter model fallback}, and contextual what-if expansion that dynamically appends new branches to existing scenario graphs.
+
+      % \item Architected an asynchronous \textbf{LLM orchestration pipeline} using Redis Queue and background workers, decoupling multi-step agent execution and reducing API latency by \textbf{65\% (15s to 5.2s)}.
+      % \item Designed a context-retrieval and schema-validation engine, achieving a \textbf{98.2\%} job completion rate.
+      % \item Architected an asynchronous LLM job processing pipeline using \textbf{Redis Queue} and background workers, decoupling multi-step agent execution loops and cutting API latency by \textbf{65\%} (15s to 5.2s).
+      % \item Designed a dynamic context-retrieval and schema-enforced validation engine, ensuring deterministic structured JSON outputs from nondeterministic model runs with a \textbf{98.2\%} job completion success rate.
+      % \item Built a real-time decision-graph visualizer supporting \textbf{100+ simulated path nodes} at \textbf{60 FPS} using \textbf{React Flow} and \textbf{Zustand} to render complex LLM tradeoff analysis.
+    \end{itemize}
+
+
+     \projectItem[
+       title={\textbf{Shady-cph} -- Competitive Programming CLI | TypeScript, Node.js, Playwright, npm},
+        live={NPM, https://www.npmjs.com/package/shady-cph},
+        github={https://github.com/Anas-github-acc/shady-cph},
+        keyHighlight={}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Built and published \textbf{Shady-CPH}, a Node.js CLI with a \textbf{local HTTP daemon} that automates Codeforces testcase retrieval, multi-language compilation/execution, output validation, and solution submission, reaching \textbf{674 npm downloads}.
+        % \item Built and published an \textbf{npm CLI} that automates the Codeforces workflow using \textbf{Playwright browser automation} to fetch problem test cases and submit authenticated solutions directly from the terminal.
+        % \item Developed a \textbf{multi-language local judging pipeline} with automatic language detection, compilation, testcase execution, runtime/compilation error handling, and terminal-based output comparison across downloaded test cases.
+    \end{itemize}
+
+    % \projectItem[
+    %     title={\textbf{Cloudx.syn} -- Windows Cloud File Sync Client | C#, .NET 9, Azure SQL, Azure Blob Storage},
+    %     live={nil},
+    %     github={https://github.com/Anas-github-acc/cloudx.sync},
+    %     keyHighlight={}
+    % ]
+    %
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Built a \textbf{C\#/.NET 9 cloud-sync system} integrating \textbf{Azure Blob Storage and Azure SQL Database}, processing create, modify, rename, and delete events through asynchronous queue-based synchronization.
+    %     \item Designed the \textbf{Azure SQL metadata layer} with relational constraints, indexes, transactions, and parameterized queries, profiling workloads with \textbf{Query Store} to optimize database performance.
+    %     \item Instrumented sync, storage, and database operations with \textbf{Azure Monitor/Application Insights and OpenTelemetry}, tracking request latency, failures, retries, and service health for production troubleshooting.
+    %
+    % \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Technical Skills -----------
+\begin{skillsSection}{Technical Skills}
+    \skillItem[
+        category={Languages:},
+        skills={Go, Python, C/C++, JavaScript, TypeScript, SQL}
+    ]
+    \\
+    \skillItem[
+        category={Backend \& Systems:},
+        skills={Node.js, REST APIs, gRPC, Supabase, PostgreSQL, Redis, Distributed Systems}
+    ]
+    \\
+    \skillItem[
+        category={Cloud \& Infrastructure:},
+        skills={AWS, EKS, Kubernetes, Docker, Terraform, CI/CD, VPC, IAM, Git/GitHub}
+    ]
+    \\
+    \skillItem[
+        category={AI \& Agentic coding:},
+        skills={Opencode, Claude Code, RAG, MCP, Prompt Engineering, Semantic Retrieval, Agentic Workflows}
+    ]
+    \\
+    \skillItem[
+        category={Reliability \& Observability:},
+        skills={Vitest, Pytest, Playwright, Prometheus, Grafana, Loki}
+    ]
+\end{skillsSection}
+
+% --------- Achievements -----------
+\begin{achievementSection}{Achievements}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Ranked \textbf{365th} among \textbf{15,804} participants in CodeChef \textbf{START192D}.
+        \item Ranked \textbf{3,026th} among \textbf{17,000+} participants in Codeforces Round 1110 (Div. 1 + Div. 2).
+
+    \end{itemize}
+\end{achievementSection}
+
+
+% --------- Leadership & Activities -----------
+\begin{experienceSection}{Leadership \& Activities}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Organized an intra-college hackathon and mentored \textbf{25+ teams} as a \textbf{Technical Committee Core Member}.
+        % \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+\end{document}

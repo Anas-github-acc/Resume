@@ -1,0 +1,342 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Vignesh Iyer                                 %
+% MS CSE ASU                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% -------------- README --------------
+% Visit https://github.com/vgnshiyer/ASU-sparkysundevil-resume-template for comprehensive documenation.
+
+% -------------- Resume ---------------
+\documentclass{resume}
+
+\usepackage{enumitem}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlist[itemize]{
+    leftmargin=1em,
+    labelsep=0.5em,
+    itemindent=-0em,
+    itemsep=-4pt
+}
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Mohd Anas},
+    email={anas.ahamad955@gmail.com},
+    phone={8081233871},
+    linkedin={linkedin.com/in/anas-um},
+    github={github.com/Anas-github-acc}
+]
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={IIIT Vadodara, Gujarat, India},
+        graduation={August 2023 - May 2027},
+        % grade={7.46 / 10.0 GPA},
+        program={B.Tech, Information Technology},
+        coursework={Data Structures \& Algorithms, Operating Systems, Object-Oriented Design, Backend Systems},
+    ]
+\end{educationSection}
+
+% --------- Experience -----------
+\begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Aarogya Kaya | SDE Intern | Remote},
+        location={},
+        position={},
+        duration={July 2025 - January 2026}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Architected a Go backend using CQRS, PostgreSQL, and Supabase RPCs for authenticated APIs across multiple modules.
+        \item Optimized \textbf{backend read paths} with in-memory cache, Redis, and database, reducing average read latency from \textbf{420ms to 38ms (91\%)} and maintaining \textbf{p95 latency below 250ms}.
+        % \item Engineered an idempotent payment processing flow with \textbf{HMAC signature verification} and \textbf{atomic DB transactions}, preventing double-billing during concurrent checkout spikes and maintaining 100\% ledger accuracy.
+        \item Translated evolving business requirements into backend designs across 15+ modules, contributing through the \textbf{full SDLC}.
+        \item Engineered fault-tolerant asynchronous pipelines with retries and idempotent processing for a production system serving \textbf{1,000+ users daily}.
+        % \item Integrated Razorpay payment APIs and webhooks, implementing secure payment event handling and transaction workflows.
+          % \item Applied \textbf{SOLID principles and design patterns}, reducing code duplication by \textbf{30\%}.
+
+        % \item Architected \textbf{scalable backend microservices} in Go for seamless third-party integrations (Shiprocket, Instagram Graph API), implementing \textbf{CQRS} architecture to decouple data synchronization commands from read-intensive client queries.
+        % \item Applied \textbf{SOLID principles} and \textbf{structural design patterns} (Dependency Injection, Strategy) to translate business requirements into scalable systems, reducing technical debt and improving maintainability.
+        % \item Engineered secure, high-throughput API pipelines for social media integrations, optimizing request payloads to achieve \textbf{sub-250 ms response times} while enforcing data security.
+        % \item Improved deployment and frontend performance via CI/CD pipeli enes enforcing unit/integration testing and Lighthouse audits, reducing release rollback incidents to \textbf{near-zero} and maintaining \textbf{85+ Core Web Vitals scores}.
+    \end{itemize}
+
+    \experienceItem[
+        company={Open Source Contributor | Remote},
+        location={},
+        position={},
+        duration={July 2025 - May 2026}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item \textbf{Contributed to Next.js (Vercel)} by migrating the patch-next utility from CommonJS to TypeScript ESM, eliminating repeated dependency reinstalls and reducing contributor setup overhead.
+        \item Merged \textbf{22 PRs and 12 issues} across open-source projects, incorporating \textbf{maintainer code-review feedback}, fixing bugs, documenting changes, and improving developer tooling.
+        % \item Contributed \textbf{22 merged Pull Requests} and opened \textbf{12 Issues} across open-source projects, fixing bugs, implementing features, and improving developer tooling.
+    \end{itemize}
+\end{experienceSection}
+
+% --------- Projects -----------
+\begin{experienceSection}{Projects}
+    % \projectItem[
+    %     title={Cloudx.syn - File Sync Client - C\#, .NET},
+    %     github={https://github.com/Anas-github-acc/cloudx.sync},
+    %     keyHighlight={A Windows application for synchronizing local project files to cloud storage.}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Built real-time file sync with Box and Firebase, using FileSystemWatcher and YAML configuration.
+    %     \item Created Windows Forms GUI with system tray for project management and queue handling.
+    %     \item Implemented OAuth authentication for Box and Firebase, ensuring secure file upload management.
+    % \end{itemize}
+
+     \projectItem[
+       title={\textbf{A3.store} -- Distributed Key-value Store | Python, EKS, AWS, Kubernetes, Prometheus, Security},
+        live={https://a3store.vercel.app},
+        github={https://github.com/Anas-github-acc/a3.store.git},
+        keyHighlight={}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a \textbf{leaderless key-value store} across a \textbf{3-node cluster}, implementing replication, failure detection, gossip-based membership, synchronization, and anti-entropy repair.
+        \item Deployed the system on \textbf{AWS EKS} using Kubernetes StatefulSets and persistent volumes, with \textbf{GitHub Actions, Pytest, Prometheus, Grafana, and Loki} supporting automated testing, recovery validation, and real-time observability.
+        
+        % \item Developed a \textbf{leaderless} Distributed key-value store implementing replication, \textbf{failure detection}, synchronization, gossip-based membership, and anti-entropy repair across a 3-node cluster.
+        % \item Designed core engine components using \textbf{SOLID principles} and \textbf{Dependency Injection}, abstracting storage and consensus interfaces to allow seamless unit testing and driver swapping.
+        % \item Deployed on \textbf{AWS EKS} using StatefulSets and operational dashboards, validating self-healing, rolling upgrades, and disaster recovery with sub-60s recovery times.
+        % \item Developed a leaderless \textbf{Distributed key-value store} implementing replication, failure detection, synchronization, \\ gossip-based membership, and anti-entropy repair across a 3-node cluster. 
+        % \item Deployed on AWS EKS using Kubernetes StatefulSets and persistent volumes, enabling \textbf{rolling upgrades, pod recovery} and \textbf{self-healing behavior}.
+        % % \item Implemented and validated \textbf{high-availability and disaster-recovery} workflows by injecting node and pod failures, verifying self-recovery through replication, health checks, and Kubernetes self-healing within 30-60 seconds.
+        % % \item Applied \textbf{SOLID principles} by separating storage and network layers behind interfaces, enabling pluggable storage/consensus implementations and isolated unit testing. 
+        % % \item Implemented \textbf{operational dashboards} and \textbf{disaster-recovery workflows} to make the system debuggable, reliable, and usable in production-like environments.
+        % \item Built \textbf{Pytest-based tests} covering replication, failure detection, synchronization, and node-failure scenarios, with GitHub Actions enforcing automated checks and preventing regressions.
+        % \item Instrumented \textbf{production-grade observability} using Prometheus, Grafana, and Loki for real-time monitoring.
+        % \item Secured inter-node communication using \textbf{mTLS} and implemented role-based access controls for administrative operations.
+    \end{itemize}
+    
+     \projectItem[
+       title={\textbf{Dumpmail} -- Open-Source Email Automation Platform | Next.js, TypeScript, Supabase, GitHub Actions},
+        live={https://Dumpmail.vercel.app},
+        github={https://github.com/Anas-github-acc/Dumpmail.git},
+        keyHighlight={}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Built a \textbf{Next.js, Node.js, and TypeScript} email automation platform, using \textbf{Node.js scripts for email delivery}, scheduled campaigns, workflow execution, dynamic template processing, and Supabase-backed lead management.
+          % Built a \textbf{Next.js and TypeScript} email automation platform with scheduled campaigns, workflow execution, dynamic template processing, and \textbf{Supabase-backed} lead management.
+        \item Engineered a \textbf{CI-driven testing and delivery workflow} using GitHub Actions/GitLab CI and \textbf{Playwright}, automating application checks and validating end-to-end campaign workflows.
+          % Engineered a \textbf{CI-driven delivery and testing workflow} using GitHub Actions/GitLab CI and \textbf{Playwright}, automating application checks and validating end-to-end campaign workflows.
+        % \item Built an open-source email automation platform with time-based campaign scheduling, workflow execution, and dynamic template processing for automated email delivery.
+        % \item Designed a CI-driven automation engine using GitHub Actions/GitLab CI with Supabase-backed lead management and automated Playwright testing.
+    \end{itemize}
+
+    
+
+    \projectItem[
+      title={\textbf{Shop-Intelligence} -- Real-Time Customer Behavior Analytics | Python, Computer Vision, Queue, Pytest },
+        live={Video, https://www.youtube.com/watch?v=6cUaSd2ndzg},
+        github={https://github.com/Anas-github-acc/shop-intelligence},
+        keyHighlight={Real-time customer behavior analytics from multi-camera CCTV streams.}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Built a distributed \textbf{computer vision pipeline} for \textbf{4 synchronized CCTV streams} using concurrent workers and message queues, processing \textbf{15 FPS} with \textbf{50 ms frame-processing latency}.
+        \item Designed an \textbf{event-driven retail analytics engine} with a global visitor registry, generating real-time customer behavior events and dashboards while using multiprocessing and multithreading for scalable multi-camera processing.
+
+        % \item Built a distributed real-time \textbf{computer vision pipeline} for four synchronized CCTV streams using concurrent workers and message queues, \textbf{processing 15 FPS} while reducing frame-processing latency to \textbf{50 ms}.
+        % % \item Built a \textbf{distributed real-time video-processing pipeline} for four synchronized CCTV streams using \textbf{concurrent workers} and \textbf{message queues}, processing \textbf{15 FPS} while reducing frame-processing latency to \textbf{50 ms}.
+        % \item Designed an \textbf{event-driven} analytics engine and global visitor registry that generated real-time backend events for customer behavior dashboards and retail insights.
+        % \item \textbf{Optimized multi-camera processing} using \textbf{multiprocessing} and \textbf{multithreading} to maximize throughput and ensure scalable real-time analytics.
+
+        % \item Designed a multi-camera retail analytics pipeline processing 4+ synchronized CCTV streams at 15 FPS, enabling real-time visitor tracking and behavior analysis across 10+ store zones.
+        % \itme Built a global visitor registry using 512-dimensional appearance embeddings and cosine-similarity matching, achieving 90\% cross-camera re-identification accuracy and reducing duplicate visitor counts by 12\%.
+        % \item Architected finite-state-machine based event processing that generated ENTRY, EXIT, QUEUE, and ZONE events with 83\% precision while supporting real-time analytics for customer flow and dwell-time measurement.
+
+    \end{itemize}
+
+
+    % \projectItem[
+    %   title={Second Brain | Agentic Career Path Simulator | Python, LLMs, Redis Queue, React Flow},
+    %   live={https://second-brain-a3.vercel.app/?preview&t=152&f=212},
+    %   github={https://github.com/Anas-github-acc/Second-Brain},
+    %   keyHighlight={}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %   \itemsep -6pt {}
+    %   \item Architected an asynchronous \textbf{LLM orchestration pipeline} using Redis Queue and background workers, decoupling multi-step agent execution and reducing API latency by \textbf{65\% (15s to 5.2s)}.
+    %   \item Designed a context-retrieval and schema-validation engine, achieving a \textbf{98.2\%} job completion rate.
+    %   % \item Architected an asynchronous LLM job processing pipeline using \textbf{Redis Queue} and background workers, decoupling multi-step agent execution loops and cutting API latency by \textbf{65\%} (15s to 5.2s).
+    %   % \item Designed a dynamic context-retrieval and schema-enforced validation engine, ensuring deterministic structured JSON outputs from nondeterministic model runs with a \textbf{98.2\%} job completion success rate.
+    %   % \item Built a real-time decision-graph visualizer supporting \textbf{100+ simulated path nodes} at \textbf{60 FPS} using \textbf{React Flow} and \textbf{Zustand} to render complex LLM tradeoff analysis.
+    % \end{itemize}
+
+    % \projectItem[
+    %     title={Madui - Open-source React Component Library},
+    %     live={https://madui.vercel.app/},
+    %     github={https://github.com/madui-core/madui},
+    %     keyHighlight={Accessible React components with full source ownership}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Engineered \textbf{madui} as a modular component library granting \textbf{full code ownership} via a copy-paste architecture.
+    %     \item Integrated headless UI primitives with \textbf{Tailwind CSS} to eliminate bloated dependencies and CSS override conflicts.
+    %     \item Enforced strict \textbf{WCAG 2.1} accessibility standards and semantic HTML structures with keyboard navigation, screen reader compatibility (ARIA), and flexible dark-mode theme configuration.
+    % \end{itemize}
+
+    % \projectItem[
+    %     title={IntoxAI - Python, LangChain, FastAPI, RAG},
+    %     live={https://github.com/Anas-github-acc/IntoxAI},
+    %     github={https://github.com/Anas-github-acc/IntoxAI},
+    %     keyHighlight={Retrieval-Augmented Generation (RAG) system for xAI FAQs with modular LLM orchestration and retrieval pipeline.}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}    
+    %     \item Architected a modular RAG pipeline using \textbf{Factory} and \textbf{Strategy} design patterns for pluggable embedding models, retrievers, and LLM providers.
+    %     \item Integrated \textbf{LangChain}, \textbf{Google AI APIs}, and \textbf{ChromaDB} to implement semantic search, context-aware retrieval, and low-latency embedding-based document querying.
+    %     \item Backend services with token-efficient prompt handling using \textbf{tiktoken}, optimizing Gemini API usage and latency.
+    % \end{itemize}
+
+    % \projectItem[
+    %     title={SDN Core - OpenFlow Controller - Go, MininetVM},
+    %     live={nil},
+    %     github={https://github.com/Anas-github-acc/SDNCore},
+    %     keyHighlight={Software-Defined Networking (SDN) controller in Go featuring support for the OpenFlow 1.3 protocol.}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Implemented secure handshake, flow table management, and packet processing for robust network control.
+    %     \item Employed Clean Architecture and Domain-Driven Design principles for a modular and maintainable codebase.
+    %     \item Tested in a simulated environment using Mininet VM, enabling intelligent MAC address learning.
+    % \end{itemize}
+    
+    % \projectItem[
+    %     title={SigmoidNN - Neural Network Library - Python, Deep Learning},
+    %     github={https://github.com/Anas-github-acc/SigmoidNN},
+    %     keyHighlight={A feedforward neural network Python package on PyPI from scratch, achieving 97.99\% accuracy on standard datasets.}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Formulated the network using sigmoid activations and cross-entropy loss, applying linear algebra and calculus.
+    %     \item Implemented backpropagation with analytical gradients, increasing training speed by $10^3$-$10^4$ times compared to numerical methods.
+    % \end{itemize}
+    
+\end{experienceSection}
+
+% \newpage
+
+
+% --------- Technical Skills -----------
+\begin{skillsSection}{Technical Skills}
+    \skillItem[
+      category={Languages:},
+        skills={Go, Python, C/C++, JavaScript, TypeScript, SQL}
+    ]
+    \\
+    \skillItem[
+      category={Frontend:},
+        skills={React.js, Next.js, Redux, Tailwind, HTML, CSS}
+    ]
+    \\
+    \skillItem[
+      category={Backend \& System:},
+        skills={FastAPI, Node.js, REST APIs, PostgreSQL, Redis, gRPC, Distributed Systems, System Design}
+    ]
+    \\
+    \skillItem[
+      category={Cloud \& Infrastructure:},
+      skills={AWS, EKS, Kubernetes, Docker, Terraform, Git/GitHub, CI/CD, VPC, IAM}
+    ]
+    % \\
+    % \skillItem[
+    %   category={AI \& LLMs:},
+    %   skills={Langchain, Hugging Face, Computer Vision, Generative AI, LLM Agents, RAG}
+    % ]
+    % \\ 
+    % \skillItem[
+    %   category={Testing:},
+    %     skills={Pytest, Vitest, Jest, Playwright, Cypress, Selenium}
+    % ]
+    % \skillItem[
+    %     category={AI \& Agentic Tools:},
+    %     skills={Claude Code, Cursor, OpenCode, Antigravity, Prompt Engineering, Context Engineering}
+    % ]
+    % \\ 
+    % \skillItem[
+    %     category={AI \& Agentic Systems:},
+    %     skills={Multi-Agent Orchestration, Model Context Protocol (MCP), RAG, Vector Search, LLM Tool Calling, Prompt Caching, Prompt Engineering, Context Engineering}
+    % ]
+    % \skillItem[
+    %     category={Core Competencies:},
+    %     skills={Backend Engineering, Distributed Systems, Microservices Architecture, API Design (REST/gRPC), Cloud-Native Development, DevOps \& Observability, System Design, Automation}
+    % ]
+\end{skillsSection}
+
+
+% --------- Core Competencies ---------
+% \begin {skillsSection}{Core Competencies}
+%     \skillItem[
+%         category={},
+%         skills={\textbf{Backend Engineering}, \textbf{Distributed Systems}, Software Design, Artificial Intelligence, DevOps, Data Mining}
+%         % skills={\textbf{Backend Engineering}, \textbf{Distributed Systems}, \textbf{Cloud Infrastructure}, DevOps \& Observability, API Design (REST/gRPC), Automation}
+%         ]
+%     \end{skillsSection}
+
+% ---------- Achievement ---------------
+
+\begin{achievementSection}{Achievement}
+  \begin{itemize}
+      % \vspace{-0.5em}
+      \itemsep -6pt {}
+      % \item Achieved Codeforces \textbf{Pupil (1292)}.
+      \item Ranked \textbf{365th} among \textbf{15,804} participants in CodeChef \textbf{START192D}.
+      \item Ranked \textbf{3,026th} among \textbf{17,000+} participants in Codeforces Round 1110 (Div. 1 + Div. 2)
+      % \item \textbf{Solved 500+ DSA problems} across Codeforces, LeetCode and CodeChef.
+      % \item LeetCode Rating: 1565
+  \end{itemize}
+\end{achievementSection}
+
+% --------- Leadership & Activities -----------
+\begin{experienceSection}{Leadership \& Activities}
+    % \activityItem[
+    %     title={Technical Committee, IIIT Vadodara},
+    %     keyHighlight={Core Member},
+    %     duration={March 2024 - Present}
+    % ]
+    \begin{itemize}
+        % \vspace{-0.5em}
+        % \itemsep -6pt {}
+        \item Organized an intra-college hackathon and mentored \textbf{25+ teams} as a \textbf{Technical Committee Core Member}.
+        % \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.  
+        \item Organized \textbf{5+} events and workshops, driving student engagement in \textbf{competitive programming} as \textbf{Coding Club Member}.
+        % \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.
+
+        % \item Coordinated an intra-college hackathon for \textbf{150+ participants} and mentored \textbf{25+ teams} during project Development.
+    \end{itemize}
+
+    % \activityItem[
+    %     title={Dot Club, IIIT Vadodara},
+    %     keyHighlight={Joint Secretary \& Design Lead},
+    %     duration={Jan 2024 | Present}
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Conducted \textbf{5+ events, 3 design workshops}, \& guided \textbf{30+ members}.
+    % \end{itemize}
+\end{experienceSection}
+
+\end{document}

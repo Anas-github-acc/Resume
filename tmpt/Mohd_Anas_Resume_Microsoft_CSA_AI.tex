@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mohd Anas - Microsoft Cloud Solution Architect (AI & Agentic Solutions)
+% Tailored for: Azure / Agentic AI / Solution Architecture / Customer Success
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage{enumitem}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlist[itemize]{
+    leftmargin=1em,
+    labelsep=0.5em,
+    itemindent=-0em,
+    itemsep=-4pt
+}
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Mohd Anas},
+    email={anas.ahamad955@gmail.com},
+    phone={(+91) 8081233871},
+    linkedin={linkedin.com/in/anas-um},
+    github={github.com/Anas-github-acc}
+]
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={IIIT Vadodara, Gujarat, India},
+        graduation={August 2023 - May 2027},
+        program={B.Tech in Information Technology},
+        coursework={Data Structures \& Algorithms, Operating Systems, Object-Oriented Design, Backend Systems}
+    ]
+\end{educationSection}
+
+
+% --------- Experience -----------
+\begin{experienceSection}{Experience}
+
+    \experienceItem[
+        company={\textbf{Aarogya Kaya} | Remote | Software Engineer Intern},
+        location={Remote},
+        position={SDE Intern},
+        duration={July 2025 - January 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item \textbf{Architected secure backend services} using CQRS, PostgreSQL, and Supabase RPCs, protecting \textbf{15 RPC functions and database tables} with \textbf{JWT/RBAC, Row-Level Security, admin-only controls, environment secrets, and least-privilege access}.
+
+        \item Optimized \textbf{backend read paths} with in-memory caching, Redis, and database access patterns, reducing average latency from \textbf{420ms to 38ms} while maintaining \textbf{p95 latency below 250ms}.
+
+        \item Engineered \textbf{fault-tolerant asynchronous pipelines} with retries and idempotent processing for a production service serving \textbf{1,000+ users daily}.
+
+        \item Established \textbf{CI/CD pipelines} for backend and web services, automating \textbf{unit tests, Playwright E2E tests, linting, build validation, and deployment} across pull requests and merges.
+
+    \end{itemize}
+
+
+    \experienceItem[
+        company={\textbf{Open Source} | Remote | Software Contributor},
+        location={},
+        position={},
+        duration={July 2025 - May 2026}
+    ]
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Migrated the \textbf{Next.js (Vercel) patch-next utility} from CommonJS to TypeScript ESM, saving \textbf{15--30 seconds} per local reinstall during development and testing.
+
+        \item Delivered \textbf{22 merged pull requests and 12 issues} through maintainer reviews, \textbf{design discussions, and iterative feedback}, translating reported problems into fixes and features while improving developer tooling.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Projects -----------
+\begin{experienceSection}{Projects}
+
+    \projectItem[
+        title={\textbf{Second Brain} -- Agentic Decision Simulator | Python, LLMs, Multi-Agent Systems, RAG},
+        live={https://second-brain-a3.vercel.app/},
+        github={https://github.com/Anas-github-acc/Second-Brain},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Built a \textbf{multi-agent decision system} with \textbf{3 specialized agents} across a \textbf{4-stage, 2-pass workflow}, orchestrating retrieval, scenario generation, and what-if expansion with \textbf{2 LLM calls per initial run} and \textbf{2--6 generated nodes} per expansion.
+
+        \item \textbf{Raised retrieval hit rate from 75\% to 90\% and groundedness to 92\%} across \textbf{10K chunks} using query rewriting, semantic retrieval, and reranking; added an evaluation/guardrail harness with \textbf{12 validation checks} that caught \textbf{95\% of invalid graphs} across 3 failure categories.
+
+    \end{itemize}
+
+
+    % VERIFY BEFORE APPLYING: push Azure SQL / Blob Storage / Monitor implementation
+    % and README evidence to the public repository if these changes are not already visible.
+    % \projectItem[
+    %     title={\textbf{Cloudx.sync} -- Azure Cloud File Sync Client | C\#, .NET 9, Azure SQL, Azure Blob Storage},
+    %     live={nil},
+    %     github={https://github.com/Anas-github-acc/cloudx.sync},
+    %     keyHighlight={}
+    % ]
+    %
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %
+    %     \item Designed and built a \textbf{C\#/.NET 9 Azure cloud-sync solution} using \textbf{Azure Blob Storage and Azure SQL Database}, translating create, modify, rename, and delete events into asynchronous queue-based storage and metadata workflows.
+    %
+    %     \item Modeled the \textbf{Azure SQL metadata layer} with constraints, indexes, transactions, parameterized queries, and Query Store profiling; instrumented sync and data operations with \textbf{Azure Monitor/Application Insights and OpenTelemetry} for latency, failure, retry, and service-health diagnostics.
+    %
+    % \end{itemize}
+    %
+
+    % VERIFY BEFORE APPLYING: the public a3.store README snapshot inspected on 2026-08-18
+    % documents AWS EKS. Keep Azure AKS below only if the AKS/Terraform implementation is real
+    % and preferably pushed to GitHub before submitting this resume.
+    \projectItem[
+        title={\textbf{A3.store} -- Distributed Key-Value Database | Python, Azure AKS, AWS EKS, Kubernetes, Terraform, gRPC},
+        live={https://a3store.vercel.app},
+        github={https://github.com/Anas-github-acc/a3.store.git},
+        keyHighlight={}
+    ]
+
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+
+        \item Developed a \textbf{leaderless distributed key-value database} with \textbf{gRPC replication, quorum consistency, gossip-based failure detection, hinted handoff, and anti-entropy repair} across a \textbf{3-node cluster}.
+
+        \item Managed \textbf{stateful Kubernetes workloads with Terraform across Azure AKS and AWS EKS}, running 3 KV replicas with autoscaling node pools, pod anti-affinity, persistent volumes, rolling updates, PDBs, and health probes; instrumented \textbf{10 Prometheus metrics} with Grafana for production troubleshooting.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+
+% --------- Technical Skills -----------
+\begin{skillsSection}{Technical Skills}
+    \skillItem[
+        category={Languages:},
+        skills={C/C++, Go, Python, JavaScript, SQL}
+    ]
+    \\
+    \skillItem[
+        category={AI \& Agentic Systems:},
+        skills={LLMs, Multi-Agent Systems, RAG, Semantic Retrieval, Reranking, Evaluation, Guardrails}
+    ]
+    \\
+    \skillItem[
+        category={Azure \& Backend:},
+        skills={Microsoft Azure, AKS, Azure SQL, Azure Blob Storage, Azure Monitor/Application Insights, REST APIs}
+    ]
+    \\
+    \skillItem[
+        category={Cloud, DevOps \& Quality:},
+        skills={GitHub, GitHub Actions, Kubernetes, Docker, Terraform, CI/CD, PostgreSQL, Redis, Prometheus, Grafana, Pytest, Playwright}
+    ]
+\end{skillsSection}
+
+
+% --------- Achievements -----------
+\begin{achievementSection}{Achievements}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Ranked \textbf{365th} among \textbf{15,804} participants in CodeChef \textbf{START192D}.
+        \item Ranked \textbf{3,026th} among \textbf{17,000+} participants in Codeforces Round 1110 (Div. 1 + Div. 2).
+    \end{itemize}
+\end{achievementSection}
+
+
+% --------- Leadership & Activities -----------
+\begin{experienceSection}{Leadership \& Activities}
+
+    \begin{itemize}
+        \itemsep -6pt {}
+
+        \item Organized an intra-college hackathon and mentored \textbf{25+ teams} as a \textbf{Technical Committee Core Member}.
+
+        \item Led recruitment, mentorship, and event initiatives for \textbf{100+ students} as \textbf{Joint Secretary of DOT Club}.
+
+    \end{itemize}
+
+\end{experienceSection}
+
+\end{document}
